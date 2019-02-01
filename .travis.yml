@@ -15,6 +15,7 @@ install:
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
   # cppcheck
   - sudo apt-get install -qq cppcheck
+  - sudo pip3 install --upgrade pip
   - sudo pip3 install setuptools pandas numpy nose scipy h5py mkdocs pytest tensorflow keras --progress-bar off
 script: 
   # Build and run this project
