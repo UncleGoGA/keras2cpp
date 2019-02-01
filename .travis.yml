@@ -17,6 +17,7 @@ install:
   - export CXX=/usr/bin/g++-7
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 90
   - sudo apt-get install -qq make cmake
+  - sudo apt-get install python-apt python3.6-apt
   - sudo apt-get install -qq python3.6 python3.6-dev python3-pip
   # cppcheck
   - sudo apt-get install -qq cppcheck
