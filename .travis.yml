@@ -16,7 +16,8 @@ install:
   # cppcheck
   - sudo apt-get install -qq cppcheck
   - sudo pip3 install --upgrade pip
-  - sudo pip3 install setuptools pandas numpy nose scipy h5py mkdocs pytest tensorflow keras --progress-bar off
+  - sudo pip3 install setuptools --progress-bar off
+  - sudo pip3 install pandas numpy nose scipy h5py mkdocs pytest tensorflow keras --progress-bar off
 script: 
   # Build and run this project
   - mkdir build && cd build
