@@ -24,8 +24,8 @@ install:
   #- sudo apt-get install -qq python3.6 python3.6-dev python3-pip
   # cppcheck
   - sudo apt-get install -qq cppcheck
-  - sudo pip install --upgrade pip
-  - sudo pip install setuptools --progress-bar off
+  #- sudo pip install --upgrade pip
+  #- sudo pip install setuptools --progress-bar off
   - sudo pip install pandas numpy nose scipy h5py mkdocs pytest tensorflow keras --progress-bar off
 script: 
   # Build and run this project
