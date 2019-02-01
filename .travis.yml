@@ -1,7 +1,6 @@
 dist: xenial
 #sudo: required
 language: cpp
-compiler: g++-7
 
 before_install:
   # C++17
@@ -13,8 +12,9 @@ install:
   # C++17
   - sudo apt-get install -qq g++-6
   - sudo apt-get install -qq g++-7
+  - sudo apt-get install -qq build-essential
+  - sudo apt-get install -qq make cmake
   - sudo apt-get install -qq python3.6 python3-pip
-  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
   # cppcheck
   - sudo apt-get install -qq cppcheck
   - sudo pip3 install --upgrade pip
