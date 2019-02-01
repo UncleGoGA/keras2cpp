@@ -26,7 +26,9 @@ install:
   - sudo apt-get install -qq cppcheck
   #- sudo pip install --upgrade pip
   #- sudo pip install setuptools --progress-bar off
-  - sudo pip3 install pandas numpy nose scipy h5py mkdocs pytest keras --progress-bar off
+  - sudo pip install pandas numpy nose scipy h5py mkdocs pytest --progress-bar off
+  - sudo pip itstall tensorflow==1.9
+  - sudo pip install keras
 script: 
   # Build and run this project
   - mkdir build && cd build
