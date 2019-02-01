@@ -1,7 +1,10 @@
 dist: xenial
 #sudo: required
-language: cpp
-
+language: python
+matrix:
+  include:
+    - python: 3.6
+      env: KERAS_BACKEND=tensorflow
 before_install:
   # C++17
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
